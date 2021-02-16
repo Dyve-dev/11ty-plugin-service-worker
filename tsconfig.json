@@ -13,7 +13,9 @@
         "removeComments": false,
         "lib": [
             "ES2018",
-            "DOM"
+            /* "DOM",
+            "DOM.Iterable" */
+            "WebWorker"
         ],
         
     },

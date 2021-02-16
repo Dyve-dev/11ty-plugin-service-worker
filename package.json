@@ -5,7 +5,8 @@
   "main": "plugin/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "cd __test__ && cross-env NODE_ENV=test mocha --timeout 30000 --recursive './**/*spec.js' --exit || exit 1"
+    "test": "cd __test__ && cross-env NODE_ENV=test DEBUG=@dyve* mocha --timeout 30000 --recursive './**/*spec.js' --exit || exit 1",
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,11 @@
     "@11ty/eleventy": "^0.11.1",
     "@types/debug": "^4.1.5",
     "@types/node": "^14.14.28",
+    "@types/workbox-build": "^5.0.0",
     "chai": "*",
     "cross-env": "*",
     "mocha": "*",
+    "patch-package": "^6.2.2",
     "rimraf": "*"
   },
   "dependencies": {
@@ -35,6 +38,7 @@
     "workbox-build": "^6.1.0",
     "workbox-core": "^6.1.0",
     "workbox-recipes": "^6.1.0",
+    "workbox-routing": "^6.1.0",
     "workbox-strategies": "^6.1.0"
   },
   "publishConfig": {

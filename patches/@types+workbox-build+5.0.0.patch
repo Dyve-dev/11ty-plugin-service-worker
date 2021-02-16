@@ -1,0 +1,10 @@
+diff --git a/node_modules/@types/workbox-build/_types.d.ts b/node_modules/@types/workbox-build/_types.d.ts
+index 390f238..f3f389a 100644
+--- a/node_modules/@types/workbox-build/_types.d.ts
++++ b/node_modules/@types/workbox-build/_types.d.ts
+@@ -1,4 +1,4 @@
+-import { RouteHandlerCallback, RouteMatchCallback } from 'workbox-routing';
++import { RouteHandlerCallback, RouteMatchCallback } from 'workbox-core';
+ 
+ export interface ManifestEntry {
+     /**

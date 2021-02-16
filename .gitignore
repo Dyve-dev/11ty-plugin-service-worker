@@ -104,3 +104,4 @@ dist
 .tern-port
 
 __test__/_site
+*.code-workspace
