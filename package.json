@@ -1,0 +1,43 @@
+{
+  "name": "@dyve/11ty-plugin-service-worker",
+  "version": "1.0.0",
+  "description": "@11ty plugin to generate a service worker",
+  "main": "plugin/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "cd __test__ && cross-env NODE_ENV=test mocha --timeout 30000 --recursive './**/*spec.js' --exit || exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dyve-dev/11ty-plugin-service-worker.git"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy"
+  ],
+  "author": "@dyve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dyve-dev/11ty-plugin-service-worker/issues"
+  },
+  "homepage": "https://github.com/Dyve-dev/11ty-plugin-service-worker#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@types/debug": "^4.1.5",
+    "@types/node": "^14.14.28",
+    "chai": "*",
+    "cross-env": "*",
+    "mocha": "*",
+    "rimraf": "*"
+  },
+  "dependencies": {
+    "debug": "^4.3.1",
+    "workbox-build": "^6.1.0",
+    "workbox-core": "^6.1.0",
+    "workbox-recipes": "^6.1.0",
+    "workbox-strategies": "^6.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
